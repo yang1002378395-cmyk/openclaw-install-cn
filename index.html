@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw 安装配置服务 | AI Agent 一键部署</title>
+    <meta name="description" content="专业 OpenClaw 安装配置服务，帮您快速搭建 AI Agent 系统。支持 DeepSeek、Claude、GPT 等多种模型。">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .hero { text-align: center; padding: 60px 0; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 20px; background: linear-gradient(90deg, #00d9ff, #00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.2em; color: #aaa; max-width: 600px; margin: 0 auto 30px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 40px 0; }
+        .feature { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 25px; border: 1px solid rgba(255,255,255,0.1); }
+        .feature h3 { color: #00d9ff; margin-bottom: 10px; }
+        .feature p { color: #888; font-size: 0.95em; }
+        .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 50px 0; }
+        .price-card { background: rgba(255,255,255,0.08); border-radius: 16px; padding: 35px; text-align: center; border: 2px solid transparent; transition: all 0.3s; }
+        .price-card:hover { border-color: #00d9ff; transform: translateY(-5px); }
+        .price-card.popular { border-color: #00ff88; background: rgba(0,255,136,0.1); }
+        .price-card h3 { font-size: 1.4em; margin-bottom: 15px; }
+        .price-card .price { font-size: 3em; font-weight: bold; margin: 20px 0; }
+        .price-card .price small { font-size: 0.4em; color: #888; }
+        .price-card ul { list-style: none; margin: 25px 0; text-align: left; }
+        .price-card li { padding: 8px 0; color: #aaa; }
+        .price-card li::before { content: "✓ "; color: #00ff88; }
+        .cta { display: inline-block; background: linear-gradient(90deg, #00d9ff, #00ff88); color: #1a1a2e; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1em; margin-top: 20px; transition: transform 0.3s; }
+        .cta:hover { transform: scale(1.05); }
+        .contact { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 40px; margin: 50px 0; text-align: center; }
+        .contact h2 { margin-bottom: 20px; }
+        .contact p { color: #aaa; margin-bottom: 20px; }
+        .contact-methods { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 25px; }
+        .contact-method { background: rgba(255,255,255,0.08); padding: 20px 30px; border-radius: 12px; }
+        .contact-method strong { color: #00d9ff; }
+        footer { text-align: center; padding: 30px; color: #666; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🤖 OpenClaw 安装配置服务</h1>
+            <p>专业 AI Agent 部署服务，让您快速拥有自己的智能助手。支持 DeepSeek、Claude、GPT 等主流模型。</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>⚡ 快速部署</h3>
+                <p>1-3 小时完成安装配置，支持 macOS / Linux / Windows</p>
+            </div>
+            <div class="feature">
+                <h3>🔗 多渠道接入</h3>
+                <p>Telegram、Discord、微信、企业微信、飞书等 10+ 平台</p>
+            </div>
+            <div class="feature">
+                <h3>💰 成本优化</h3>
+                <p>对接 DeepSeek 等低成本模型，成本降低 90%</p>
+            </div>
+            <div class="feature">
+                <h3>🛡️ 安全可靠</h3>
+                <p>本地部署，数据不外泄；支持自定义安全策略</p>
+            </div>
+        </div>
+        
+        <h2 style="text-align: center; margin: 50px 0 30px;">套餐价格</h2>
+        <div class="pricing">
+            <div class="price-card">
+                <h3>基础版</h3>
+                <div class="price">¥99</div>
+                <ul>
+                    <li>OpenClaw 基础安装</li>
+                    <li>单平台接入（Telegram/Discord/微信）</li>
+                    <li>DeepSeek 模型配置</li>
+                    <li>7 天技术支持</li>
+                </ul>
+                <a href="#contact" class="cta">立即咨询</a>
+            </div>
+            <div class="price-card popular">
+                <h3>高级版 ⭐</h3>
+                <div class="price">¥299</div>
+                <ul>
+                    <li>包含基础版所有服务</li>
+                    <li>多平台接入（最多 3 个）</li>
+                    <li>Claude/GPT 模型配置</li>
+                    <li>Skills 定制（3 个）</li>
+                    <li>30 天技术支持</li>
+                </ul>
+                <a href="#contact" class="cta">立即咨询</a>
+            </div>
+            <div class="price-card">
+                <h3>企业版</h3>
+                <div class="price">¥999</div>
+                <ul>
+                    <li>包含高级版所有服务</li>
+                    <li>无限平台接入</li>
+                    <li>私有模型部署</li>
+                    <li>Skills 定制（无限）</li>
+                    <li>90 天技术支持 + 培训</li>
+                </ul>
+                <a href="#contact" class="cta">立即咨询</a>
+            </div>
+        </div>
+        
+        <div class="contact" id="contact">
+            <h2>📞 联系方式</h2>
+            <p>微信/支付宝付款，支持先安装后付款</p>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <strong>微信</strong><br>yang1002378395
+                </div>
+                <div class="contact-method">
+                    <strong>Telegram</strong><br>@openclaw_install
+                </div>
+                <div class="contact-method">
+                    <strong>邮箱</strong><br>openclaw@example.com
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2026 OpenClaw 安装配置服务 | 专业 AI Agent 部署</p>
+    </footer>
+</body>
+</html>
