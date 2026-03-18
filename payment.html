@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>付款确认 - OpenClaw 安装服务</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { color: #00d9ff; margin-bottom: 30px; }
+        .payment-method {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 20px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .payment-method h3 { color: #00ff88; margin-bottom: 20px; }
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background: rgba(255,255,255,0.1);
+            margin: 20px auto;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        .address {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            word-break: break-all;
+            margin: 15px 0;
+        }
+        .note {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+        .cta {
+            display: inline-block;
+            background: linear-gradient(90deg, #00d9ff, #00ff88);
+            color: #1a1a2e;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💳 付款方式</h1>
+        <p style="color: #888;">请选择以下任意方式付款，付款后截图发送给我确认</p>
+
+        <div class="payment-method">
+            <h3>💚 微信支付</h3>
+            <div class="qr-placeholder">微信收款码<br>（待提供）</div>
+            <p>扫码支付后截图确认</p>
+        </div>
+
+        <div class="payment-method">
+            <h3>💙 支付宝</h3>
+            <div class="qr-placeholder">支付宝收款码<br>（待提供）</div>
+            <p>扫码支付后截图确认</p>
+        </div>
+
+        <div class="payment-method">
+            <h3>₿ USDT (TRC20)</h3>
+            <div class="address">TYTvuzacfUgeei36NK9dmfUCKFqiQfYizp</div>
+            <p>转账后提供 TXID 确认</p>
+        </div>
+
+        <div class="note">
+            <p>⚠️ 注意：付款后请截图或提供交易凭证</p>
+            <p>收到确认后 24 小时内安排服务</p>
+        </div>
+
+        <a href="https://t.me/your_telegram" class="cta">联系确认付款</a>
+    </div>
+</body>
+</html>
